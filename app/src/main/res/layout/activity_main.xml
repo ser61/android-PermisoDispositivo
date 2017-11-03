@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.weiser.sergio_w.permisosdispositivo.MainActivity">
+    tools:context="com.weiser.sergio_w.permisosdispositivo.MainActivity"
+    android:orientation="vertical"
+    >
 
     <Button
         android:id="@+id/btn_bluetooth"
@@ -14,4 +17,19 @@
         android:onClick="activarBluetooth"
         />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_gps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Habilitar GPS"
+        android:onClick="activarGps"
+        />
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Permisos de camara"
+        android:onClick="permisosCamera"
+        />
+</LinearLayout>
